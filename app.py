@@ -3,7 +3,7 @@ import joblib
 import numpy as np
 
 # Load the trained model
-model = joblib.load('gradient_boosting_best_model.pkl')
+model = joblib.load('gradient_boosting_two_features_model.pkl')
 
 st.title("Gradient Boosting Model Predictor")
 
