@@ -9,7 +9,7 @@ st.title("Taxi Fare Predictor")
 
 # Get user input
 passenger_count = st.number_input('Passenger Count', min_value=1, max_value=10, value=1)
-trip_distance = st.number_input('Trip Distance', min_value=0.0, value=1.0)
+trip_distance = st.number_input('Trip Distance(in miles)', min_value=0.0, value=1.0)
 
 
 with st.expander("Optional Inputs"):
