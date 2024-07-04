@@ -1,7 +1,9 @@
+numpy 
+scipy 
+joblib 
+threadpoolctl
 cython
 scikit-learn
-streamlit
-joblib
-numpy 
+ 
 
 
