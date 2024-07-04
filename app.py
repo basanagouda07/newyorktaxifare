@@ -19,6 +19,6 @@ transaction_hour = st.selectbox('Transaction Hour', options=range(0, 24), index=
 if st.button('Predict'):
     features = np.array([[passenger_count, trip_distance, PULocationID, transaction_day, transaction_hour]])
     prediction = model.predict(features)
-    st.write(f"Predicted Value: {prediction[0]}")
+    st.write(f"Predicted Fare: ${prediction[0]:.2f}")
 
 st.write("Note: Please input valid values for prediction.")
