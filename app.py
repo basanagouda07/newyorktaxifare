@@ -5,7 +5,7 @@ import numpy as np
 # Load the trained model
 model = joblib.load('gradient_boosting_best_model.pkl')
 
-st.title("Gradient Boosting Model Predictor")
+st.title("Taxi Fare Predictor")
 
 # Get user input
 passenger_count = st.number_input('Passenger Count', min_value=1, max_value=10, value=1)
