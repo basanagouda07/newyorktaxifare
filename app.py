@@ -24,22 +24,3 @@ if st.button('Predict'):
 
 st.write("Note: Please input valid values for prediction.")
 
-# Chatbot function using OpenAI API
-def generate_response(prompt):
-    response = openai.Completion.create(
-        engine="text-davinci-003",
-        prompt=prompt,
-        max_tokens=150,
-        n=1,
-        stop=None,
-        temperature=0.9,
-    )
-    return response.choices[0].text.strip()
-
-# Chatbot interaction
-st.header("Chat with Our Transit Fare Assistant")
-chat_input = st.text_input("You: ", "Hello, how can I get assistance with transit fares?")
-if st.button("Send"):
-    if chat_input:
-        response = generate_response(chat_input)
-        st.write(f"Chatbot: {response}")
