@@ -1,7 +1,6 @@
 import streamlit as st
 import joblib
 import numpy as np
-import ollama
 # Load the trained model
 model = joblib.load('gradient_boosting_best_model.pkl')
 
